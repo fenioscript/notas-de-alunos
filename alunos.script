@@ -1,0 +1,33 @@
+alunos= ["Francisco","Suzana","Cintía","Jeferson","Ismael","Aline"];
+notas=[[8,12],[17,18.5],[0,16],[0,14],[20,15],[20,17.5]];
+n=0
+do{
+ 
+select=n
+
+nomedoaluno=alunos[select];
+notadoaluno=notas[select];
+n1=notadoaluno[0];
+n2=notadoaluno[1];
+(nomedoaluno);
+med=n1+n2;
+m=med/2;
+console.log("------------------------")
+console.log("Nome:",nomedoaluno);
+console.log("Primeira nota: ",n1);
+console.log("Segunda nota: ",n2);
+console.log("Média Final:",m)
+if(m<=7){
+  console.log("Não Transitou:(");
+}
+else{
+    if(m<10){
+      console.log("Você foi a Recurso.")
+}
+  else{
+   console.log("Transitou :)!")   
+  }
+}
+console.log("------------------------")
+ n++; 
+}while(n<alunos.length);
